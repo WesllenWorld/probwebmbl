@@ -1,2 +1,2 @@
-# probwebmbl
-Tudo (ou quase isso) de programação web e mobile
+# progwebmbl
+Tudo (ou quase isso) da disciplina de programação web e mobile
