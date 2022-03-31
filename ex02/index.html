@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,11 +7,83 @@
   <h1> Conversor Real-Dólar</h1>
 </head>
 <body>
+<main>
+  <div id="inicio">
+  <section class='conteudos'>
+  <div class='form-group'>
+      <label for="valorEmReal">R$</label>
+      <input
+          type="number"
+          name="valorEmReal"
+          id="valorEmReal"
+          class='input'
+          step='0.01'
+          min='0.00'
+          max='9999999999.99'
+          value=''
+          tabindex="1"
+          onClick='ativarBotao()'
+          onChange='ativarBotao()'
+          autofocus
+          required
+      />
+ </div>
+
+ <div class="form-group">             
+      <input
+          type="radio"
+          id='dolar'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Dólar'
+          tabindex="2"
+      /> <label for="dolar">Dólar</label>
+
+      <input
+          type="radio"
+          id='euro'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Euro'
+          tabindex="3"
+      /> <label for="euro">Euro</label>
+
+      <input
+          type="radio"
+          id='libra'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Libra'
+          tabindex="4"
+      /> <label for="libra">Libra</label>
+
+      <input
+          type="radio"
+          id='bitcoins'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Bitcoins'
+          tabindex="5"
+      /> <label for="bitcoins">Bitcoins</label>
+ </div>
+ <div class="form-group">
+     <button class='desativado botao' id='btnConverter'
+     onClick='ativarBotao(); bloquearBotao()' disabled>Converter</button>
+     <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+ </div>
+</section>
+
+
+
+
+
+  </div>
 
 
 
 
   <a href="/index.html">Página inicial aqui.</a>  
+</main>
 </body>
 </hmtl>
 
