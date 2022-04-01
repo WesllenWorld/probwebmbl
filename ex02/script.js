@@ -9,22 +9,29 @@ let botaoDolarReal = document.querySelector("botaoDolarReal")
 let botaoRealDolar = document.querySelector("botaoRealDolar")
 
 
+/* VERIFICAR SE FOI DIGITADO ALGUM VALOR PARA PODER CONVERTER */
+function botaoTaxa() {
+  if(valorDigitado.value == 0 || valorDigitado == '' || valorDigitado == null) {
+      botaoTaxa.disabled = true;
+      btnConverter.style.background = '#ccc'
+      btnConverter.style.cursor = 'not-allowed'
+  }
+}
+
+// REATIVAR BOTAO
+function botaoTaxaLimpar() {
+  if(valorDigitado.value > 0) {
+    botaoTaxa.disabled = false;
+      btnConverter.style.background = '#ffc107'
+      btnConverter.style.cursor = 'pointer'
+  } else {
+      console.log('Nao ativou')
+  }
+}
 
 let aviso = document.querySelector('#aviso')
 
-// selecionar os botoes
-let btnConverter = document.querySelector('#btnConverter')
-let btnLimpar    = document.querySelector('#btnLimpar')
 
-// COTACOES DO DIA 21/09/2021   // 22/09/2021
-let valorDoDolar   = 5.31       // 5.28
-let valorDoEuro    = 6.23       // 6.20
-let valorDaLibra   = 7.26       // 7.20
-let valorDoBitcoin = 229762.85  // 224115,01 as 14:16 UTC ou 11:19
-let valorEmReal    = 0
-
-let moedaEstrangeira = ''
-let moedaConvertida  = 0.00
 
 // MENSAGEM FORMATADA PARA EXIBIR VALORES MONETARIOS
 function mensagemFormatada(moedaConvertida) {
@@ -33,25 +40,7 @@ function mensagemFormatada(moedaConvertida) {
     aviso.textContent = "O valor " + (valorEmReal).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + " convertido em " + moedaEstrangeira + " é " + moedaConvertida
 }
 
-/* VERIFICAR SE FOI DIGITADO ALGUM VALOR PARA PODER CONVERTER */
-function bloquearBotao() {
-    if(valorDigitado.value == 0 || valorDigitado == '' || valorDigitado == null) {
-        btnConverter.setAttribute('disabled', 'disabled')
-        btnConverter.style.background = '#ccc'
-        btnConverter.style.cursor = 'not-allowed'
-    }
-}
 
-// REATIVAR BOTAO
-function ativarBotao() {
-    if(valorDigitado.value > 0) {
-        btnConverter.removeAttribute('disabled')
-        btnConverter.style.background = '#ffc107'
-        btnConverter.style.cursor = 'pointer'
-    } else {
-        console.log('Nao ativou')
-    }
-}
 
 // VERIFICAR QUAL BOTAO RADIO ESTA MARCADO checked ou checked == true
 // vincular a verificacao a um evento, click no botao Converter
