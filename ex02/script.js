@@ -9,6 +9,7 @@ let botaoDolarReal = document.querySelector("botaoDolarReal")
 let botaoRealDolar = document.querySelector("botaoRealDolar")
 
 
+valorDigitado.addEventListener("change", botaoTaxa);
 /* VERIFICAR SE FOI DIGITADO ALGUM VALOR PARA PODER CONVERTER */
 function botaoTaxa() {
   if(valorDigitado.value == 0 || valorDigitado == '' || valorDigitado == null) {
