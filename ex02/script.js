@@ -1,49 +1,69 @@
+let taxa = 0;
 let dolares = 0;
 let reais = 0;
 
-let taxaDeConversao = document.getElementById("taxa");
-let valorDolar = document.getElementById("valorDolar");
-let valorReal = document.getElementById("valorReal");
+let inTaxaDeConversao = document.querySelector("taxa");
+let inValorDolar = document.getElementById("valorDolar");
+let inValorReal = document.getElementById("valorReal");
 
+let botaoTaxa = document.querySelector("botaoTaxa")
+let botaoTaxaLimpar = document.querySelector("botaoTaxaLimpar")
+let botaoDolarReal = document.querySelector("botaoDolarReal")
+let botaoRealDolar = document.querySelector("botaoRealDolar")
 
+inValorDolar.disabled = true;
+inValorReal.disabled = true;
 
-let botaoTaxa = document.getElementById("botaoTaxa")
-let botaoTaxaLimpar = document.getElementById("botaoTaxaLimpar")
-let botaoDolarReal = document.getElementById("botaoDolarReal")
-let botaoRealDolar = document.getElementById("botaoRealDolar")
-
-botaoDolarReal.disabled = true;
+botaoTaxaLimpar.disabled = true;
 botaoRealDolar.disabled = true;
-
+botaoDolarReal.disabled = true;
+botaoTaxa.disabled = false;
 
 function dolarReal(){
-  reais = taxaDeConversao.value * valorDolar;
-  valorReal.value = reais;
+  if(inValorDolar.value > 0){
+    dolares = inValorDolar.value;
+    inValorReal.value = taxa * dolares;
+  }else{
+    alert("Falha ao preencher o campo.");
+  }
+  
 }
 function realDolar(){
-  dolares = valorReal/taxaDeConversao.value;
-  valorDolar.value = dolares;
+  if(inValorReal.value > 0){
+    reais = inValorReal.value;
+    inValorDolar.value = reais/taxa;
+  }else{
+    alert("Falha ao preencher o campo.");
+  }
 }
 
 function taxaConfirmada(){
-  if(taxaDeConversao.value === ""){
-    document.getElementById("botaoTaxa").disabled = false;
+  if(inTaxaDeConversao.value > 0){
+    taxa = inTaxaDeConversao.value;
+    inputReal.disabled = false;
+    inputDolar.disabled = false;
+    buttonReset.disabled = false;
+    buttonToDolar.disabled = false;
+    buttonToReal.disabled = false;
+    buttonConfirmar.disabled = true;
+    inputTaxa.disabled = true;
   }else{
-    document.getElementById("botaoTaxa").disabled = true;
-    botaoRealDolar.disabled = false;
-    botaoDolarReal.disabled = false;
-
+    alert("Falha ao preencher o campo.");
   }
 }
 
 function taxaLimpar() {
-  document.getElementsByName("valorReal")[0].value = "";
-  document.getElementsByName("taxa")[0].value = "";
-  document.getElementsByName("valorDolar")[0].value = "";
-
-  document.getElementById("botaoTaxa").disabled = false;
- 
+  taxa = 0;
+  inValorDolar.value = null;
+  inValorReal.value = null;
+  inTaxaDeConversao.disabled=false;
+  inTaxaDeConversao.value = null;
+  inValorDolar.disabled = true;
+  inValorReal.disabled = true;
+  taxaLimpar.disabled = true;
   botaoRealDolar.disabled = true;
   botaoDolarReal.disabled = true;
-
+  botaoTaxa.disabled = true;botaoTaxaLimpar.disabled = true;
+  document.querySelector("taxa").disabled = true;
+  document.querySelector("botaoTaxa").disabled = true;
 }
