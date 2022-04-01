@@ -19,7 +19,7 @@ botaoRealDolar.disabled = true;
 botaoDolarReal.disabled = true;
 botaoTaxa.disabled = false;
 
-const dolarReal= () =>{
+function dolarReal(){
   if(inValorDolar.value > 0){
     dolares = inValorDolar.value;
     inValorReal.value = taxa * dolares;
@@ -28,7 +28,7 @@ const dolarReal= () =>{
   }
   
 }
-const realDolar= () =>{
+function realDolar(){
   if(inValorReal.value > 0){
     reais = inValorReal.value;
     inValorDolar.value = reais/taxa;
@@ -37,7 +37,7 @@ const realDolar= () =>{
   }
 }
 
-const taxaConfirmada = () =>{
+function taxaConfirmada(){
   if(inTaxaDeConversao.value > 0){
     taxa = inTaxaDeConversao.value;
     inValorReal.disabled = false;
@@ -52,7 +52,7 @@ const taxaConfirmada = () =>{
   }
 }
 
-const taxaLimpar = () => {
+function taxaLimpar() {
   taxa = 0;
   inValorDolar.value = null;
   inValorReal.value = null;
