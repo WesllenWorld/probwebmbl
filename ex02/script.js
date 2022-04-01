@@ -2,10 +2,13 @@
 
 /* SELECIONAR ELEMENTOS */
 // selecionar input com o numero digitado
-let valorDigitado = document.querySelector('#valorEmReal')
+let valorDigitado = document.querySelector("valorBruto")
+let botaoTaxa = document.querySelector("botaoTaxa")
+let botaoTaxaLimpar = document.querySelector("botaoTaxaLimpar")
+let botaoDolarReal = document.querySelector("botaoDolarReal")
+let botaoRealDolar = document.querySelector("botaoRealDolar")
 
-// selecionar os elementos radios (criar um array deles)
-let moedaSelecionada = document.getElementsByName('moedaEstrangeira')
+
 
 let aviso = document.querySelector('#aviso')
 
