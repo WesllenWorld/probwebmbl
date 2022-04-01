@@ -24,7 +24,7 @@ function dolarReal(){
     dolares = inValorDolar.value;
     inValorReal.value = taxa * dolares;
   }else{
-    alert("Falha ao preencher o campo.");
+    alert('Falha ao preencher o campo.');
   }
   
 }
@@ -33,7 +33,7 @@ function realDolar(){
     reais = inValorReal.value;
     inValorDolar.value = reais/taxa;
   }else{
-    alert("Falha ao preencher o campo.");
+    alert('Falha ao preencher o campo.');
   }
 }
 
@@ -48,7 +48,7 @@ function taxaConfirmada(){
     botaoTaxa.disabled = true;
     inputTaxa.disabled = true;
   }else{
-    alert("Falha ao preencher o campo.");
+    alert('Falha ao preencher o campo.');
   }
 }
 
