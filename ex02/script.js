@@ -30,8 +30,8 @@ function taxaConfirmada(){
     document.getElementById("botaoTaxa").disabled = false;
   }else{
     document.getElementById("botaoTaxa").disabled = true;
-    botaoRealDolar.disabled = true;
-    botaoDolarReal.disabled = true;
+    botaoRealDolar.disabled = false;
+    botaoDolarReal.disabled = false;
 
   }
 }
