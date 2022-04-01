@@ -9,49 +9,34 @@
 <main>
   <div id="inicio">
   <section class='conteudos'>
-  <div class="taxa">
-      <label for="taxa">Taxa de conversão</label>
+  <div class="taxaDeConversao">
+      <label>Taxa de Conversão</label>
       <input
           type="number"
-          name="taxa"
-          id="taxa"
-          class='input'
-          step='0.01'
-          min='0.00'
-          max='9999999999.99'
-          value=''
-          tabindex="1"
-          onClick='ativarBotao()'
-          onChange='ativarBotao()'
-          autofocus
-          required
+          class="taxa"
       />
+      <button class="botaoTaxa" onclick="taxaLock()">Confirmar Taxa</button>
+      <button class="botaoTaxaLimpar" onclick="taxaLimpar()">Limpar Taxa</button>
  </div>
 
  <div class="dolar">             
       <input
-          type="button"
-          id='dolar'
-          class='input'
-          name="moedaEstrangeira"
-          class="input button"
-          value='Dólar'
-          tabindex="2"
-      /> <label for="dolar">Dólar</label>
+          type="number"
+          id="vDolar"
+      /> 
+      <button class="botaoDolarReal" onclick="dolarParaReal()">Dólar para Real AQUI</button>
+
 </div>
 
-<div class="real">   
-      <input
-      type="button"
-      id='real'
-      class='input'
-      name="moedaReal"
-      class="input button"
-      value='Real'
-      tabindex="3"
-  /> <label for="dolar">Real Brasileiro</label>
-      
- </div>
+<div class="real">             
+<input
+    type="number"
+    id="vReal"
+/> 
+<button class="botaoRealDolar" onclick="realParaDolar()">Real para Dólar AQUI</button>
+
+</div>
+
  <div class="form-group">
      <button class='desativado botao' id='btnConverter'
      onClick='ativarBotao(); bloquearBotao()' disabled>Converter</button>
