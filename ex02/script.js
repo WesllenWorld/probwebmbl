@@ -22,7 +22,7 @@ function dolarReal(){
 }
 function realDolar(){
   dolares = valorReal/taxaDeConversao.value;
-  valorReal.value = dolares;
+  valorDolar.value = dolares;
 }
 
 function taxaConfirmada(){
@@ -32,7 +32,7 @@ function taxaConfirmada(){
     document.getElementById("botaoTaxa").disabled = true;
     botaoRealDolar.disabled = true;
     botaoDolarReal.disabled = true;
-    
+
   }
 }
 
