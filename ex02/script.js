@@ -25,6 +25,16 @@ function realDolar(){
   valorReal.value = dolares;
 }
 
+function taxaConfirmada(){
+  if(taxaDeConversao.value === ""){
+    document.getElementById("botaoTaxa").disabled = false;
+  }else{
+    document.getElementById("botaoTaxa").disabled = true;
+    botaoRealDolar.disabled = true;
+    botaoDolarReal.disabled = true;
+    
+  }
+}
 
 function taxaLimpar() {
   document.getElementsByName("real")[0].value = "";
