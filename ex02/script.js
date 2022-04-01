@@ -37,9 +37,9 @@ function taxaConfirmada(){
 }
 
 function taxaLimpar() {
-  document.getElementsByName("real")[0].value = "";
+  document.getElementsByName("valorReal")[0].value = "";
   document.getElementsByName("taxa")[0].value = "";
-  document.getElementsByName("dolar")[0].value = "";
+  document.getElementsByName("valorDolar")[0].value = "";
 
   document.getElementById("botaoTaxa").disabled = false;
  
