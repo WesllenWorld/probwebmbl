@@ -40,12 +40,12 @@ function realDolar(){
 function taxaConfirmada(){
   if(inTaxaDeConversao.value > 0){
     taxa = inTaxaDeConversao.value;
-    inputReal.disabled = false;
-    inputDolar.disabled = false;
-    buttonReset.disabled = false;
-    buttonToDolar.disabled = false;
-    buttonToReal.disabled = false;
-    buttonConfirmar.disabled = true;
+    inValorReal.disabled = false;
+    inValorDolar.disabled = false;
+    botaoTaxaLimpar.disabled = false;
+    botaoRealDolar.disabled = false;
+    botaoDolarReal.disabled = false;
+    botaoTaxa.disabled = true;
     inputTaxa.disabled = true;
   }else{
     alert("Falha ao preencher o campo.");
