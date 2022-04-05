@@ -4,14 +4,15 @@ let resetContador = document.querySelector("reset");
 
 function reset(){
   cont = 0;
+  printar(cont);
   
 }
 
 function somaCont(){
-  cont = cont++;
+  printar(cont++);
 }
 
-function updateDisplay(variavel) {
+function printar(variavel) {
   document.getElementById("counter-label").innerHTML = variavel;
 }
 
