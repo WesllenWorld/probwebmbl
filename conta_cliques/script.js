@@ -11,3 +11,7 @@ function somaCont(){
   cont = cont++;
 }
 
+function updateDisplay(variavel) {
+  document.getElementById("counter-label").innerHTML = variavel;
+}
+
