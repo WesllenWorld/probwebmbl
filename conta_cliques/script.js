@@ -5,6 +5,7 @@ function reset(){
   cont = 0;
   cont2 = 0;
   printar(cont);
+  printar(cont2);
   
 }
 
