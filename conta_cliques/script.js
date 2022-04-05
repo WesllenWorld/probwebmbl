@@ -8,6 +8,6 @@ function reset(){
 }
 
 function somaCont(){
-  
+  cont = cont++;
 }
 
