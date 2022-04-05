@@ -5,10 +5,16 @@ html, body{
 }
 
 div{
-  width: 100px;
+  width: 200px;
   height: 70px;
   border: 1px solid black;
   float: left;
   margin-right: 10px;
+  
+}
+.div1{
   background-color:red;
+}
+.div2{
+  background-color:blue;
 }
