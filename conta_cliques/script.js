@@ -14,6 +14,6 @@ function somaCont(){
 }
 
 function printar(variavel) {
-  document.getElementById("counter-label").innerHTML = variavel;
+  document.getElementById("conta1").innerHTML = variavel;
 }
 
