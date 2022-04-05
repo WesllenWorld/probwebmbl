@@ -1,9 +1,9 @@
 let cont = 0;
-
-let resetContador = document.querySelector("reset");
+let cont2 = 0;
 
 function reset(){
   cont = 0;
+  cont2 = 0;
   printar(cont);
   
 }
