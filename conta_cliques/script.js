@@ -1,12 +1,11 @@
 let cont = 0;
 let cont2 = 0;
+let d1 = document.getElementById("contador1");
+let d2 = document.getElementById("contador2");
 
 function reset(){
   cont = 0;
-  cont2 = 0;
   printar(cont);
-  printar(cont2);
-  
 }
 
 function somaCont(){
@@ -14,6 +13,11 @@ function somaCont(){
 }
 
 function printar(variavel) {
-  document.getElementById("conta1").innerHTML = variavel;
+  if(d1){
+    document.getElementById("contador1").innerHTML = variavel;
+  }else{
+    document.getElementById("contador2").innerHTML = variavel;
+  }
+
 }
 
