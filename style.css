@@ -4,5 +4,10 @@ html, body{
 }
 
 #links{
+  width: 400px;
+  height: 70px;
+  border: 1px solid black;
+  
+  margin-right: 10px;
   background-color: white;
 }
