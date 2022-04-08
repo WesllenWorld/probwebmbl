@@ -2,7 +2,7 @@ let cont = 0;
 let cont2 = 0;
 let d1 = document.getElementById("contador1");
 let d2 = document.getElementById("contador2");
-
+let nomeContador = document.querySelector("novoContador");
 
 function reset(){
   cont = 0;
