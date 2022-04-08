@@ -1,0 +1,20 @@
+html, body{
+  font-family: Arial;
+  
+
+}
+
+div{
+  width: 200px;
+  height: 70px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 10px;
+  
+}
+#div1{
+  background-color:red;
+}
+#div2{
+  background-color:blue;
+}
