@@ -13,11 +13,11 @@ function somaCont(){
 }
 
 function printar(variavel) {
-  if(d1){
+  
     document.getElementById("contador1").innerHTML = variavel;
-  }else{
+  
     document.getElementById("contador2").innerHTML = variavel;
-  }
+  
 
 }
 
