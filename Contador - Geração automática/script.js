@@ -41,7 +41,7 @@ function contadorNovo() {
     novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
 
-    novaDiv.getElementById("div").addEventListener("click", somaCont());
+    document.getElementById("div").addEventListener("click", somaCont());
 
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
