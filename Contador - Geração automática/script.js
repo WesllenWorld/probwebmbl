@@ -23,12 +23,13 @@ function printar(variavel) {
 
 }
 
-function contadorNovo(nomeDoContador) {
+function contadorNovo() {
+  let novo = document.getElementById("novo").value;
   let cont = 0;
   let novaDiv = document.createElement("div");
   let divArmazenamento = document.getElementById("armazenar");
   novaDiv.setAttribute('divId', 'box', divId.toString())
-  novaDiv.append('<h3>' + nomeDoContador + '</h3>');
+  novaDiv.append('<h3>' + novo + '</h3>');
   ("<br>").appendTo("novaDiv");
   novaDiv.append('<h3>' + cont + '</h3>');
   novoDivId();
