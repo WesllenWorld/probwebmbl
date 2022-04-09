@@ -24,7 +24,7 @@ function printar(variavel) {
 }
 
 function contadorNovo() {
-  if(document.getElementById("novo").value.length == 0)
+  if(document.getElementById("novo").value.length == 0 || document.getElementById("novo").value === "")
 {
     alert("ERRO: CONTADOR PRECISA DE UM NOME.")
 }else{
@@ -35,10 +35,10 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     novaDiv.setAttribute('divId', 'box', divId.toString())
-    novaDiv.append('<h3>' + novo + '</h3>');
+    novaDiv.append(novo);
     linebreak = document.createElement("br");
     novaDiv.appendChild(linebreak);
-    novaDiv.append('<h3>' + cont + '</h3>');
+    novaDiv.append(cont);
     novoDivId();
     
   
