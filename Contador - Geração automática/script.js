@@ -24,9 +24,12 @@ function printar(variavel) {
 }
 
 function contadorNovo() {
-  if(novo == ""){
-    alert("Não pode ter um contador vazio.");
-  }else{
+  if(document.getElementById("novo").value.length == 0)
+{
+    alert("empty")
+}else{
+
+
     let novo = document.getElementById("novo").value;
     let cont = 0;
     let novaDiv = document.createElement("div");
@@ -40,7 +43,7 @@ function contadorNovo() {
     
   
     divArmazenamento.appendChild(novaDiv);
-  }
+}
 }
 
 function novoDivId() {
