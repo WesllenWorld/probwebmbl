@@ -39,10 +39,12 @@ function contadorNovo() {
     linebreak = document.createElement("br");
     novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
+
+    novaDiv.getElementById("div").onclick= function() {somaCont()};
+
     novoDivId();
-    
-  
     divArmazenamento.appendChild(novaDiv);
+    
 }
 }
 
