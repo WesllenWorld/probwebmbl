@@ -26,7 +26,7 @@ function printar(variavel) {
 function contadorNovo() {
   if(document.getElementById("novo").value.length == 0)
 {
-    alert("empty")
+    alert("ERRO: CONTADOR PRECISA DE UM NOME.")
 }else{
 
 
