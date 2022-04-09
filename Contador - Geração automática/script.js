@@ -1,4 +1,4 @@
-let novoDivId = 0;
+let divId = 0;
 
 const d1 = document.getElementById("contador1");
 const d2 = document.getElementById("contador2");
