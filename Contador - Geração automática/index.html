@@ -7,37 +7,21 @@
     <body>
       <h1> Contadores</h1>
      
-      <div id="adicionar">
-        <input
+     
+        novo: <input
         type="text"
-        class="novoContador"
+        name="novo"
+        id="novo"
         >
-    <button class="novoContador" onclick="contadorNovo()" type="submit">Criar</button>
-    <div id="getText" style="display: none;">
-      INNER TEXT
-    </div>
-      </div>
+        <button class="novoContador" onclick="contadorNovo(document.getElementById('novo').value)" type="submit">Criar contador</button>
+        <div id="armazenar"></div>
+      
       
 
 
 
 
-      <div id="div1">
-        <div onclick="somaCont()">Clique se puder</div>
-        <h3 id="contador1">0</h3>
-        <button class="reset1" onclick="reset()">Zere-me se for capaz</button>
-
-
-      </div>
-
-       
-      <div id="div2">
-      <div onclick="somaCont()">Clique se puder</div>
-      <h3 id="contador2">0</h3>
-      <button class="reset2" onclick="reset()">Zere-me se for capaz</button>
-
-
-      </div>
+      
       <br>
       <a href="/index.html">Página inicial aqui.</a>
       <script src="Contador - Geração automática/script.js"></script>
