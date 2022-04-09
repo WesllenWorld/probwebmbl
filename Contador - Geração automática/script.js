@@ -25,7 +25,7 @@ function printar(variavel) {
 
 }
 
-function contadorNovo() {
+function contadorNovo(nomeDoContador) {
 
   let novaDiv = document.createElement("div");
   let divArmazenamento = document.getElementById("armazenar");
