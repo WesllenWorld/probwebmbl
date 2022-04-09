@@ -22,3 +22,10 @@ function printar(variavel) {
 
 }
 
+function ccontadorNovo() {
+  let div = document.createElement('div');
+  div.innerText = document.getElementById('getText').innerText;
+  document.body.appendChild(div);
+}
+
+
