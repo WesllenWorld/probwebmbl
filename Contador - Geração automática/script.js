@@ -30,7 +30,8 @@ function contadorNovo() {
   let divArmazenamento = document.getElementById("armazenar");
   novaDiv.setAttribute('divId', 'box', divId.toString())
   novaDiv.append('<h3>' + novo + '</h3>');
-  ("<br>").appendTo("novaDiv");
+  linebreak = document.createElement("br");
+  novaDiv.appendChild(linebreak);
   novaDiv.append('<h3>' + cont + '</h3>');
   novoDivId();
   
