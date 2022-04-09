@@ -24,19 +24,23 @@ function printar(variavel) {
 }
 
 function contadorNovo() {
-  let novo = document.getElementById("novo").value;
-  let cont = 0;
-  let novaDiv = document.createElement("div");
-  let divArmazenamento = document.getElementById("armazenar");
-  novaDiv.setAttribute('divId', 'box', divId.toString())
-  novaDiv.append('<h3>' + novo + '</h3>');
-  linebreak = document.createElement("br");
-  novaDiv.appendChild(linebreak);
-  novaDiv.append('<h3>' + cont + '</h3>');
-  novoDivId();
+  if(novo == ""){
+    alert("Não pode ter um contador vazio.");
+  }else{
+    let novo = document.getElementById("novo").value;
+    let cont = 0;
+    let novaDiv = document.createElement("div");
+    let divArmazenamento = document.getElementById("armazenar");
+    novaDiv.setAttribute('divId', 'box', divId.toString())
+    novaDiv.append('<h3>' + novo + '</h3>');
+    linebreak = document.createElement("br");
+    novaDiv.appendChild(linebreak);
+    novaDiv.append('<h3>' + cont + '</h3>');
+    novoDivId();
+    
   
-
-  divArmazenamento.appendChild(novaDiv);
+    divArmazenamento.appendChild(novaDiv);
+  }
 }
 
 function novoDivId() {
