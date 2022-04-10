@@ -37,8 +37,13 @@ function contadorNovo() {
     let c = document.createTextNode(cont);
     contP.appendChild(c);
   
+    
 
-    novaDiv.setAttribute('divId', 'box', divId.toString())
+    novaDiv.onclick = function() {
+    cont = (cont++);
+}
+
+    novaDiv.setAttribute('divId', 'box', divId.toString());
     novaDiv.append(novo);
     novaDiv.append(contP);
     
