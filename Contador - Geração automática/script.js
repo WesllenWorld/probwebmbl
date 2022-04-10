@@ -43,7 +43,7 @@ function contadorNovo() {
     novaDiv.append(novo);
     linebreak = document.createElement("br");
     novaDiv.appendChild(linebreak);
-    novaDiv.append(cont);
+    
     let c = document.createTextNode(cont);
     cont2.appendChild(c);
     novaDiv.append(cont2);
