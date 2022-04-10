@@ -38,10 +38,15 @@ function contadorNovo() {
     contP.appendChild(c);
   
     
+    const button = document.createElement('button')
 
-    novaDiv.onclick = function() {
-    cont = (cont++);
-}
+    // Set the button text to 'Can you click me?'
+    button.innerText = 'Can you click me?'
+    button.addEventListener("click", ()=>{
+      contP.appendChild(c++);
+    });
+    
+
 
     novaDiv.setAttribute('divId', 'box', divId.toString());
     novaDiv.append(novo);
