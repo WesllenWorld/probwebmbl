@@ -3,8 +3,7 @@ let divId = 0;
 
 const d1 = document.getElementById("contador1");
 const d2 = document.getElementById("contador2");
-let novoContador = document.querySelector("novoContador");
-let nomeDoContador;
+
 
 function reset(){
   cont = 0;
@@ -39,8 +38,7 @@ function contadorNovo() {
     linebreak = document.createElement("br");
     novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
-
-    novaDiv.addEventListener("click", somaCont());
+cont++;
 
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
