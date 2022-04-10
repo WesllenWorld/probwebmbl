@@ -33,18 +33,8 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    
     let c = document.createTextNode(cont);
     contP.appendChild(c);
-  
-    
-    const button = document.createElement('button')
-
-    // Set the button text to 'Can you click me?'
-    button.innerText = 'Can you click me?'
-    button.addEventListener("click", ()=>{
-      c.nodeValue(c++);
-    });
     
 
 
