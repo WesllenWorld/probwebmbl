@@ -51,7 +51,7 @@ function contadorNovo() {
 
     let btn = document.createElement("button");
     btn.innerHTML = "Zerar";
-    document.body.appendChild(btn); 
+    document.novaDiv.appendChild(btn); 
     btn.onclick = function(){
       contP.c = 1;
     }
