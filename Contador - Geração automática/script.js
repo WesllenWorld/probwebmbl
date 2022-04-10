@@ -48,12 +48,13 @@ function contadorNovo() {
     contP.appendChild(c);
     novaDiv.append(contP);
 
-    let btn = document.createElement("botão");
+    let btn = document.createElement("button");
     btn.innerHTML = "Zerar";
     document.body.appendChild(btn); 
     btn.onclick = function(){
       contP.c = 1;
     }
+    novaDiv.append(btn);
     
 
     novoDivId();
