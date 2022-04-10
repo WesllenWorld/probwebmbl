@@ -43,7 +43,7 @@ function contadorNovo() {
     // Set the button text to 'Can you click me?'
     button.innerText = 'Can you click me?'
     button.addEventListener("click", ()=>{
-      c.innerHTML(c++);
+      c.nodeValue(c++);
     });
     
 
