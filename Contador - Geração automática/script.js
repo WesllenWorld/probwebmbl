@@ -30,7 +30,6 @@ function contadorNovo() {
     alert("ERRO: CONTADOR PRECISA DE UM NOME.")
 }else{
 
-
     let novo = document.getElementById("novo").value;
     let cont = 0;
     let novaDiv = document.createElement("div");
@@ -41,7 +40,7 @@ function contadorNovo() {
     novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
 
-    document.getElementById("div").addEventListener("click", somaCont());
+    novaDiv.addEventListener("click", somaCont());
 
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
