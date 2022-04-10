@@ -43,7 +43,7 @@ function contadorNovo() {
 
     novaDiv.setAttribute('divId', 'box', divId.toString())
     novaDiv.append(novo);
-    novaDiv.append(cont);
+    
     novaDiv.append(contP);
     //linebreak = document.createElement("br");
     //novaDiv.appendChild(linebreak);
@@ -56,7 +56,7 @@ function contadorNovo() {
     btn.onclick = function(){
       contP.c = 1;
     }
-    novaDiv.append(btn);
+    document.novaDiv.append(btn);
     
 
     novoDivId();
