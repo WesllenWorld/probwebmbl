@@ -37,16 +37,17 @@ function contadorNovo() {
     //let viewCont = document.createElement("h3");
    // let node = document.createElement('h3');
    // node.innerHTML('<h3>cont</h3>');
-
+   let c = document.createTextNode(cont);
+   contP.appendChild(c);
+  
 
     novaDiv.setAttribute('divId', 'box', divId.toString())
     novaDiv.append(novo);
+    novaDiv.append(contP);
     //linebreak = document.createElement("br");
     //novaDiv.appendChild(linebreak);
     
-    let c = document.createTextNode(cont);
-    contP.appendChild(c);
-    novaDiv.append(contP);
+    
 
     let btn = document.createElement("button");
     btn.innerHTML = "Zerar";
