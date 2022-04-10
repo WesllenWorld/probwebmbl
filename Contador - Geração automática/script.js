@@ -41,7 +41,7 @@ function contadorNovo() {
     novaDiv.setAttribute('divId', 'box', divId.toString());
     novaDiv.append(novo);
     novaDiv.append(contP);
-    novaDiv.append(button);
+   
     
     
     
