@@ -33,7 +33,7 @@ function contadorNovo() {
     let cont = 0;
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
-   // let cont2 = document.createElement("p");
+    let cont2 = document.createElement("p");
     //let viewCont = document.createElement("h3");
    // let node = document.createElement('h3');
    // node.innerHTML('<h3>cont</h3>');
@@ -42,8 +42,11 @@ function contadorNovo() {
     novaDiv.setAttribute('divId', 'box', divId.toString())
     novaDiv.append(novo);
     linebreak = document.createElement("br");
-    novaDiv.append(linebreak);
+    novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
+    let c = document.createTextNode(cont);
+    cont2.appendChild(c);
+    novaDiv.append(cont2);
     
 
     novoDivId();
