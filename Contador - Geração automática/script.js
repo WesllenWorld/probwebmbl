@@ -28,35 +28,21 @@ function contadorNovo() {
 {
     alert("ERRO: CONTADOR PRECISA DE UM NOME.")
 }else{
-
     let novo = document.getElementById("novo").value;
     let cont = 0;
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    //let viewCont = document.createElement("h3");
-   // let node = document.createElement('h3');
-   // node.innerHTML('<h3>cont</h3>');
-   let c = document.createTextNode(cont);
-   contP.appendChild(c);
+    
+    let c = document.createTextNode(cont);
+    contP.appendChild(c);
   
 
     novaDiv.setAttribute('divId', 'box', divId.toString())
     novaDiv.append(novo);
     novaDiv.append(contP);
-    novaDiv.onclick = function(){
-      cont = cont++;
-    }
     
     
-
-    let btn = document.createElement("button");
-    btn.innerHTML = "Zerar";
-    novaDiv.appendChild(btn); 
-    btn.onclick = function(){
-      contP.c = 1;
-    }
-    novaDiv.append(btn);
     
 
     novoDivId();
