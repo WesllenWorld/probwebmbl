@@ -33,7 +33,7 @@ function contadorNovo() {
     let cont = 0;
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
-    let cont2 = document.createElement("p");
+    let contP = document.createElement("p");
     //let viewCont = document.createElement("h3");
    // let node = document.createElement('h3');
    // node.innerHTML('<h3>cont</h3>');
@@ -45,8 +45,15 @@ function contadorNovo() {
     novaDiv.appendChild(linebreak);
     
     let c = document.createTextNode(cont);
-    cont2.appendChild(c);
-    novaDiv.append(cont2);
+    contP.appendChild(c);
+    novaDiv.append(contP);
+
+    let btn = document.createElement("botão");
+    btn.innerHTML = "Zerar";
+    document.body.appendChild(btn); 
+    btn.onclick = function(){
+      contP.c = 1;
+    }
     
 
     novoDivId();
