@@ -33,12 +33,17 @@ function contadorNovo() {
     let cont = 0;
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
+    //let viewCont = document.createElement("h3");
+   // let node = document.createElement('h3');
+   // node.innerHTML('<h3>cont</h3>');
+
+
     novaDiv.setAttribute('divId', 'box', divId.toString())
     novaDiv.append(novo);
     linebreak = document.createElement("br");
     novaDiv.appendChild(linebreak);
     novaDiv.append(cont);
-cont++;
+    
 
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
