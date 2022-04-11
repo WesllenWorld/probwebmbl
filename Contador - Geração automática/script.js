@@ -15,11 +15,21 @@ function contadorNovo() {
     let c = document.createTextNode(cont);
     contP.appendChild(c);
     
+    const btn = document.createElement('button');
+    let lbl = document.createTextNode("Zerar");        
+    btn.appendChild(lbl); 
+    btn.onclick = function()
+    {
+      document.getElementById(contP.id).innerHTML = 0;
+    }
+    document.body.appendChild(btn);   
 
 
     novaDiv.setAttribute('divId', divId.toString());
     novaDiv.append(novo);
     novaDiv.append(contP);
+
+
    
     
     
