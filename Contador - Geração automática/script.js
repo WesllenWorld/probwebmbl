@@ -25,7 +25,8 @@ function contadorNovo() {
     btn.appendChild(lbl); 
     btn.addEventListener("click", function()
     {
-      document.getElementById(contP.id).innerHTML = 0;
+      cont = 0;
+      document.getElementById(contP.id).innerHTML = cont;
     });
     novaDiv.appendChild(btn);  
     
@@ -33,7 +34,8 @@ function contadorNovo() {
     
     novaDiv.addEventListener("click", function() {
      // alert("You clicked this div");
-     document.getElementById(contP.id).innerHTML = cont++;
+     cont++;
+     document.getElementById(contP.id).innerHTML = cont;
    });
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
