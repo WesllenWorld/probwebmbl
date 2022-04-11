@@ -57,12 +57,12 @@ function contadorNovo() {
 }
 
 function novoDivId() {
-  divId = +"d"+(divId+1);
+  divId = divId+1;
   return divId;
 }
 
 function novoContId() {
-  contId = +"c"+divId+1;
+  contId = contId+1;
   return contId;
 }
 
