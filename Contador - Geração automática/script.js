@@ -18,10 +18,10 @@ function contadorNovo() {
     const btn = document.createElement('button');
     let lbl = document.createTextNode("Zerar");        
     btn.appendChild(lbl); 
-    btn.onclick = function()
+    btn.addEventListener("click", function()
     {
       document.getElementById(contP.id).innerHTML = 0;
-    }
+    });
     novaDiv.appendChild(btn);   
 
 
