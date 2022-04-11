@@ -11,7 +11,7 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    contP.id="cont"+contId;
+    contP.id="contId"+contId;
     let c = document.createTextNode(cont);
     contP.appendChild(c);
 
