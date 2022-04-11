@@ -2,7 +2,7 @@ let divId = 0;
 let contId = 0;
 
 function contadorNovo() {
-  if(document.getElementById("novo").value.length == 0 || document.getElementById("novo").value === "")
+  if(document.getElementById("novo").value.length == 0 || document.getElementById("novo").value === " ")
 {
     alert("ERRO: CONTADOR PRECISA DE UM NOME.")
 }else{
