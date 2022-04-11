@@ -49,7 +49,7 @@ function contadorNovo() {
     
     novaDiv.addEventListener("click", function() {
      // alert("You clicked this div");
-     document.getElementById("numero").innerHTML = cont++;
+     document.getElementById("contId").innerHTML = cont++;
    });
     novoDivId();
     novoContId();
