@@ -52,6 +52,7 @@ function contadorNovo() {
      document.getElementById("numero").innerHTML = cont++;
    });
     novoDivId();
+    novoContId();
     divArmazenamento.appendChild(novaDiv);
     
 }
