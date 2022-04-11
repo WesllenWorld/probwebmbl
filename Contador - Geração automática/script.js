@@ -14,7 +14,12 @@ function contadorNovo() {
     contP.id="div"+divId;
     let c = document.createTextNode(cont);
     contP.appendChild(c);
-    
+
+    novaDiv.setAttribute('divId', divId.toString());
+    novaDiv.append(novo);
+    novaDiv.append(contP);
+
+
     const btn = document.createElement('button');
     let lbl = document.createTextNode("Zerar");        
     btn.appendChild(lbl); 
@@ -22,15 +27,7 @@ function contadorNovo() {
     {
       document.getElementById(contP.id).innerHTML = 0;
     });
-    novaDiv.appendChild(btn);   
-
-
-    novaDiv.setAttribute('divId', divId.toString());
-    novaDiv.append(novo);
-    novaDiv.append(contP);
-
-
-   
+    novaDiv.appendChild(btn);  
     
     
     
