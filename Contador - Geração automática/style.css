@@ -10,9 +10,10 @@ div{
   border: 1px solid black;
   float: left;
   margin-right: 10px;
-  
+  position: relative;
 }
 
-#armazenar{
+.novaDiv{
+  position:absolute;
 }
 
