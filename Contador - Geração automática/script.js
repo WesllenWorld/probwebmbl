@@ -1,28 +1,6 @@
 let divId = 0;
 let contId = 0;
 
-const d1 = document.getElementById("contador1");
-const d2 = document.getElementById("contador2");
-
-
-function reset(){
-  cont = 0;
-  printar(cont);
-}
-
-function somaCont(){
-  printar(cont++);
-}
-
-function printar(variavel) {
-  
-    document.getElementById("contador1").innerHTML = variavel;
-  
-    document.getElementById("contador2").innerHTML = variavel;
-  
-
-}
-
 function contadorNovo() {
   if(document.getElementById("novo").value.length == 0 || document.getElementById("novo").value === "")
 {
@@ -66,8 +44,7 @@ function novoContId() {
   return contId;
 }
 
-function createButton()
-{
+function createButton() {
      let btn = document.createElement('BUTTON');
      let lbl = document.createTextNode("Zerar");        
      btn.appendChild(lbl);   
