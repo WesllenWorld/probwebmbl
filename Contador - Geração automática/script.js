@@ -25,7 +25,7 @@ function contadorNovo() {
     btn.appendChild(lbl); 
     btn.addEventListener("click", function()
     {
-      cont = 0;
+      cont = -1; //como a div está somando +1 com o click, -1 previne que ela mostre 0+1 ao zerar
       document.getElementById(contP.id).innerHTML = cont;
     });
     novaDiv.appendChild(btn);  
@@ -33,7 +33,6 @@ function contadorNovo() {
     
     
     novaDiv.addEventListener("click", function() {
-      event.stopPropagation();
      cont++;
      document.getElementById(contP.id).innerHTML = cont;
    });
