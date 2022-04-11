@@ -56,3 +56,14 @@ function novoDivId() {
   divId += divId+1;
 }
 
+function createButton()
+{
+     let btn = document.createElement('BUTTON');
+     let lbl = document.createTextNode("Zerar");        
+     btn.appendChild(lbl);   
+     btn.onclick = function()
+     {
+        window.history.go(0);
+     }
+     document.body.appendChild(btn);    
+}

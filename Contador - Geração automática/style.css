@@ -7,13 +7,13 @@ html{
 div{
   width: 200px;
   height: 70px;
-  border: 1px solid black;
+  
   float: left;
   margin-right: 10px;
   
 }
 
 #armazenar{
-  
+  border: 1px solid black;
 }
 
