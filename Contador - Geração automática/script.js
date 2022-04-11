@@ -11,7 +11,7 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    contP.id="div"+divId;
+    contP.id="cont"+contId;
     let c = document.createTextNode(cont);
     contP.appendChild(c);
 
@@ -53,13 +53,7 @@ function novoContId() {
   return contId;
 }
 
-function createButton() {
-     let btn = document.createElement('BUTTON');
-     let lbl = document.createTextNode("Zerar");        
-     btn.appendChild(lbl);   
-     btn.onclick = function()
-     {
-        window.history.go(0);
-     }
-     document.body.appendChild(btn);    
+function novoBtnId() {
+  btnId = btnId+1;
+  return btnId;
 }
