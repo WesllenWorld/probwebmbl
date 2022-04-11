@@ -57,7 +57,7 @@ function contadorNovo() {
 }
 
 function novoDivId() {
-  divId = "d"+divId+1;
+  divId = "d"+(divId+1);
   return divId;
 }
 
