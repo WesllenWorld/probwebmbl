@@ -40,6 +40,8 @@ function contadorNovo() {
     novoDivId();
     novoContId();
     divArmazenamento.appendChild(novaDiv);
+    linebreak = document.createElement("br");
+queryForm.appendChild(linebreak);
     
 }
 }
