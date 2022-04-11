@@ -1,5 +1,5 @@
 let divId = 0;
-
+let contId = 0;
 
 const d1 = document.getElementById("contador1");
 const d2 = document.getElementById("contador2");
@@ -33,13 +33,14 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    contP.id="numero";
+    
+    contP.setAttribute(contId, contId.toString);
     let c = document.createTextNode(cont);
     contP.appendChild(c);
     
 
 
-    novaDiv.setAttribute('divId', divId.toString());
+    novaDiv.setAttribute(divId, divId.toString());
     novaDiv.append(novo);
     novaDiv.append(contP);
    
@@ -51,13 +52,20 @@ function contadorNovo() {
      document.getElementById("numero").innerHTML = cont++;
    });
     novoDivId();
+    novoContId();
     divArmazenamento.appendChild(novaDiv);
     
 }
 }
 
 function novoDivId() {
-  divId += divId+1;
+  divId = "d"+divId+1;
+  return divId;
+}
+
+function novoContId() {
+  contId = "c"+divId+1;
+  return contId;
 }
 
 function createButton()
