@@ -20,17 +20,7 @@ function contadorNovo() {
     novaDiv.append(contP);
 
 
-    
-    
-    
-    
-    novaDiv.addEventListener("click", function() {
-     // alert("You clicked this div");
-     cont++;
-     document.getElementById(contP.id).innerHTML = cont;
-   });
-
-   const btn = document.createElement('button');
+    const btn = document.createElement('button');
     let lbl = document.createTextNode("Zerar");        
     btn.appendChild(lbl); 
     btn.addEventListener("click", function()
@@ -39,11 +29,18 @@ function contadorNovo() {
       document.getElementById(contP.id).innerHTML = cont;
     });
     novaDiv.appendChild(btn);  
+    
+    
+    
+    novaDiv.addEventListener("click", function() {
+     // alert("You clicked this div");
+     cont++;
+     document.getElementById(contP.id).innerHTML = cont;
+   });
     novoDivId();
     novoContId();
     divArmazenamento.appendChild(novaDiv);
-    linebreak = document.createElement("br");
-queryForm.appendChild(linebreak);
+    
     
 }
 }
