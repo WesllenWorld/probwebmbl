@@ -22,7 +22,7 @@ function contadorNovo() {
     {
       document.getElementById(contP.id).innerHTML = 0;
     }
-    novaDiv.body.appendChild(btn);   
+    document.novaDiv.appendChild(btn);   
 
 
     novaDiv.setAttribute('divId', divId.toString());
