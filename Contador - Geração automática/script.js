@@ -33,7 +33,7 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    contP.id='contId';
+    contP.id="numero";
     let c = document.createTextNode(cont);
     contP.appendChild(c);
     
@@ -51,7 +51,6 @@ function contadorNovo() {
      document.getElementById("numero").innerHTML = cont++;
    });
     novoDivId();
-    novoContId();
     divArmazenamento.appendChild(novaDiv);
     
 }
