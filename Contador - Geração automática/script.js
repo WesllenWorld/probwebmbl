@@ -37,6 +37,16 @@ function contadorNovo() {
      cont++;
      document.getElementById(contP.id).innerHTML = cont;
    });
+
+   const btn = document.createElement('button');
+    let lbl = document.createTextNode("Zerar");        
+    btn.appendChild(lbl); 
+    btn.addEventListener("click", function()
+    {
+      cont = 0;
+      document.getElementById(contP.id).innerHTML = cont;
+    });
+    novaDiv.appendChild(btn);  
     novoDivId();
     novoContId();
     divArmazenamento.appendChild(novaDiv);
