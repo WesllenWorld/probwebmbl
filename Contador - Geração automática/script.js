@@ -32,7 +32,7 @@ function contadorNovo() {
     });
     novaDiv.appendChild(btn);  
     
-    document.getElementById(novaDiv.id).style.backgroundColor = colorir();
+    novaDiv.style.background = colorir();
     
     novaDiv.addEventListener("click", function() {
      cont++;
