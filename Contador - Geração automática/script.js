@@ -33,14 +33,14 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
-    
-    contP.setAttribute(contId, contId.toString);
+       
+    contP.setAttribute('contId', contId.toString);
     let c = document.createTextNode(cont);
     contP.appendChild(c);
     
 
 
-    novaDiv.setAttribute(divId, divId.toString());
+    novaDiv.setAttribute('divId', divId.toString());
     novaDiv.append(novo);
     novaDiv.append(contP);
    
@@ -52,7 +52,6 @@ function contadorNovo() {
      document.getElementById("numero").innerHTML = cont++;
    });
     novoDivId();
-    novoContId();
     divArmazenamento.appendChild(novaDiv);
     
 }
