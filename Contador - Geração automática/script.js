@@ -43,15 +43,13 @@ function contadorNovo() {
     novaDiv.append(novo);
     novaDiv.append(contP);
    
-    novaDiv.getElementById("numero").onclick=function(){
-      cont=cont+1;
-      this.innerHTML=connt} 
     
     
-    //novaDiv.addEventListener("click", function() {
+    
+    novaDiv.addEventListener("click", function() {
      // alert("You clicked this div");
-     //document.getElementById("numero").innerHTML = cont++;
-  // });
+     document.getElementById("numero").innerHTML = cont++;
+   });
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
     
