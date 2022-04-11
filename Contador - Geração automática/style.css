@@ -11,4 +11,7 @@ div{
   position: relative;
 }
 
+.armazenar *{
+  background-color: aqua;
+}
 
