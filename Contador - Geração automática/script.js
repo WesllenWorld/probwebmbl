@@ -1,5 +1,6 @@
 let divId = 0;
 let contId = 0;
+let cores = ['red', 'green', 'blue', 'yellow', 'chocolate', 'crimson', 'aqua', 'cyan', 'lime', 'lightpink', 'orange', 'gray'];
 
 function contadorNovo() {
   if(document.getElementById("novo").value.length == 0 || document.getElementById("novo").value === " ")
@@ -14,6 +15,7 @@ function contadorNovo() {
     contP.id="contId"+contId;
     let c = document.createTextNode(cont);
     contP.appendChild(c);
+    
 
     novaDiv.setAttribute('divId', divId.toString());
     novaDiv.append(novo);
@@ -30,7 +32,7 @@ function contadorNovo() {
     });
     novaDiv.appendChild(btn);  
     
-    
+    document.getElementById(novaDiv.id).style.backgroundColor = colorir();
     
     novaDiv.addEventListener("click", function() {
      cont++;
@@ -55,9 +57,9 @@ function novoContId() {
   contId = contId+1;
   return contId;
 }
-/*
-function novoBtnId() {
-  btnId = btnId+1;
-  return btnId;
+
+function colorir() {
+  let corIndice = Math.floor(Math.random() * 12);
+  let cor = cores[corIndice];
+  return cor;
 }
-*/
