@@ -33,6 +33,7 @@ function contadorNovo() {
     let novaDiv = document.createElement("div");
     let divArmazenamento = document.getElementById("armazenar");
     let contP = document.createElement("p");
+    contP.id="numero";
     let c = document.createTextNode(cont);
     contP.appendChild(c);
     
@@ -46,7 +47,8 @@ function contadorNovo() {
     
     
     novaDiv.addEventListener("click", function() {
-      alert("You clicked this div");
+     // alert("You clicked this div");
+     contP.getElementById("numero").innerHTML = cont++;
    });
     novoDivId();
     divArmazenamento.appendChild(novaDiv);
