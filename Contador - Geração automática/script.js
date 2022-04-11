@@ -38,6 +38,7 @@ function contadorNovo() {
      document.getElementById(contP.id).innerHTML = cont;
    });
     novoDivId();
+    novoContId();
     divArmazenamento.appendChild(novaDiv);
     
 }
