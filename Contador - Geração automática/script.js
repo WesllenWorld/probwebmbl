@@ -33,7 +33,7 @@ function contadorNovo() {
     
     
     novaDiv.addEventListener("click", function() {
-     // alert("You clicked this div");
+      event.stopPropagation();
      cont++;
      document.getElementById(contP.id).innerHTML = cont;
    });
