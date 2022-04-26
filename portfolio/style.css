@@ -63,7 +63,7 @@ section{
 .grid2,.grid3{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3opx;
+  gap: 30px;
 }
 
 .grid3{
@@ -105,7 +105,7 @@ section{
 }
 
 .sobreImagem .sobreSecao{
-  height: 800px;
+  height: 350px;
   width: 60%;
   margin-left: auto;
   border-radius: 30px;
