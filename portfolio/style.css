@@ -118,7 +118,7 @@ section{
     .sobreSecao{
       display: block;
     }
-    .sobreImagem, .sobreSecao{
+    .sobreImagem .sobreSecao{
       display: none;
     }
   }
