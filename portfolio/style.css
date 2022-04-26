@@ -116,7 +116,7 @@ section{
   }
   @media (max-width: 800px){
     .sobreSecao{
-      display: block;
+      display: none;
     }
     .sobreImagem .sobreSecao{
       display: none;
