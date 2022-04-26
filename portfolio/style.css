@@ -107,7 +107,7 @@ section{
 .sobreImagem, .sobreSecao{
   height: 350px;
   width: 60%;
-  margin-left: center;
+  margin-left: right;
   border-radius: 30px;
 }
 @media (max-width: 1000px){
