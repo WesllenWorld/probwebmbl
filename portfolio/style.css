@@ -104,7 +104,7 @@ section{
   background:var(--headerColor);
 }
 
-.sobreSecao{
+.sobreImagem .sobreSecao{
   height: 350px;
   width: 60%;
   margin-left: auto;
