@@ -130,7 +130,7 @@ section{
 }
 
 @media (max-width: 500px){
-  .topHeader .flex-space-btw {
+  .topHeader, .flex-space-btw {
     display: block;
     text-align: center;
   }
