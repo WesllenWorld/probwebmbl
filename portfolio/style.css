@@ -111,12 +111,15 @@ section{
   border-radius: 30px;
 }
 @media (max-width: 1000px){
-  .sobreSecao{
+  .sobreSecao .sobreImagem{
     width: 80%;
   }
   @media (max-width: 800px){
     .sobreSecao{
       display: block;
+    }
+    .sobreImagem .sobreSecao{
+      display: none;
     }
   }
 }
