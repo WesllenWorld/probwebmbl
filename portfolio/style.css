@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box;
+}
 
 :root{
   --accentColor: #ad3869;
@@ -58,7 +60,7 @@ section{
   align-items: center;
 }
 
-.grid2,.grid3{
+.grid2 .grid3{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
