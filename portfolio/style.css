@@ -104,8 +104,22 @@ section{
   background:var(--headerColor);
 }
 
-
-
+.sobreSecao{
+  height: 350px;
+  width: 60%;
+  margin-left: auto;
+  border-radius: 30px;
+}
+@media (max-width: 1000px){
+  .sobreSecao{
+    width: 80%;
+  }
+  @media (max-width: 800px){
+    .sobreSecao{
+      display: block;
+    }
+  }
+}
 
 .topHeader .logo{
   font-size: 18px;
