@@ -168,3 +168,6 @@ section{
   display: none;
 }
 
+.div-aprendendo{
+  visibility: "hidden";
+}
