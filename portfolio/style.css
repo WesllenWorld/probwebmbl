@@ -163,3 +163,7 @@ section{
 .aprendendo{
   background-color: #f1f1f1;
 }
+
+.hide{
+  display: none;
+}
