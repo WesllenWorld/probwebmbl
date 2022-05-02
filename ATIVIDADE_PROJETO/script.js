@@ -11,6 +11,6 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", "https://the-cocktail-db.p.rapidapi.com/random.php");
 xhr.setRequestHeader("X-RapidAPI-Host", "the-cocktail-db.p.rapidapi.com");
-xhr.setRequestHeader("X-RapidAPI-Key", "SIGN-UP-FOR-KEY");
+xhr.setRequestHeader("X-RapidAPI-Key", "9c2551b869mshc8173a28e9ebecdp14e04bjsne4e4b3f756f5");
 
 xhr.send(data);
