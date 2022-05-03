@@ -15,7 +15,7 @@ xhr.setRequestHeader("X-RapidAPI-Key", "9c2551b869mshc8173a28e9ebecdp14e04bjsne4
 
 xhr.send(data);
 
-function newParagrafo(){
+function newparagrafo(){
 
 	const paragrafo = document.createElement("p");
 	const texto = document.createTextNode(responseText);
