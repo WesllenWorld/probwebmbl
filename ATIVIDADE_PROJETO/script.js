@@ -40,7 +40,7 @@ xhr.send(data);
 
 
 	let titulo = document.createElement("p");
-	let texto = document.createTextNode("plau")
+	//let texto = document.createTextNode("plau")
 
 	
 	let paragrafo = document.createElement("p");
