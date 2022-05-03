@@ -9,7 +9,7 @@ xhr.addEventListener("readystatechange", function () {
 	}
 });
 
-xhr.open("GET", "https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=feijoada");
+xhr.open("GET", "https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=feijoada&offset=1");
 xhr.setRequestHeader("X-RapidAPI-Host", "recipe-by-api-ninjas.p.rapidapi.com");
 xhr.setRequestHeader("X-RapidAPI-Key", "9c2551b869mshc8173a28e9ebecdp14e04bjsne4e4b3f756f5");
 
