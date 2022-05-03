@@ -29,7 +29,12 @@ xhr.addEventListener("readystatechange", function () {
 		console.log(this.responseText);
 		const element = document.getElementById("div1");
 		element.innerHTML = xhr.responseText;
-	
+		let teste = element.innerHTML;
+		var urlRegex = /(https?:\/\/[^ ]*)/;
+
+		var input = teste;
+		var url = input.match(urlRegex)[1];
+alert(url);
 	}
 });
 
