@@ -36,7 +36,7 @@ xhr.send(data);
 
 	const paragrafo = document.createElement("p");
 	const texto = document.createTextNode("a");
-	para.appendChild(texto);
+	paragrafo.appendChild(texto);
 	const element = document.getElementById("div1");
 	element.appendChild(paragrafo);
 	
