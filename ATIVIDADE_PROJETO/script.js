@@ -27,8 +27,9 @@ xhr.addEventListener("readystatechange", function () {
 		let p = this.responseText;
 		pe = p
 		console.log(this.responseText);
-		
-		responseText.path
+		const element = document.getElementById("div1");
+		element.innerHTML = xhr.responseText;
+	
 	}
 });
 
@@ -39,15 +40,15 @@ xhr.setRequestHeader("X-RapidAPI-Key", "9c2551b869mshc8173a28e9ebecdp14e04bjsne4
 xhr.send(data);
 
 
-	let titulo = document.createElement("p");
+	//let titulo = document.createElement("p");
 	//let texto = document.createTextNode("plau")
 
 	
-	let paragrafo = document.createElement("p");
-	let texto = document.createTextNode(pe.responseText);
-	paragrafo.appendChild(texto);
+	//let paragrafo = document.createElement("p");
+	//let texto = document.createTextNode(pe.responseText);
+	//paragrafo.appendChild(texto);
 	const element = document.getElementById("div1");
-	element.appendChild(paragrafo);
+	//element.appendChild(paragrafo);
 	
 	}
 
