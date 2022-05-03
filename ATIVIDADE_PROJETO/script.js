@@ -34,7 +34,9 @@ xhr.addEventListener("readystatechange", function () {
 
 		var input = teste;
 		var url = input.match(urlRegex)[1];
-alert(url);
+		str.replace('"}]','');
+
+	alert(url);
 	}
 });
 
@@ -52,7 +54,7 @@ xhr.send(data);
 	//let paragrafo = document.createElement("p");
 	//let texto = document.createTextNode(pe.responseText);
 	//paragrafo.appendChild(texto);
-	const element = document.getElementById("div1");
+	//const element = document.getElementById("div1");
 	//element.appendChild(paragrafo);
 	
 	}
