@@ -24,6 +24,7 @@ xhr.withCredentials = false;
 
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
+		var p = this.responseText;
 		console.log(this.responseText);
 	}
 });
@@ -35,7 +36,7 @@ xhr.setRequestHeader("X-RapidAPI-Key", "9c2551b869mshc8173a28e9ebecdp14e04bjsne4
 xhr.send(data);
 
 	const paragrafo = document.createElement("p");
-	const texto = document.createTextNode(responseText);
+	const texto = document.createTextNode(p);
 	paragrafo.appendChild(texto);
 	const element = document.getElementById("div1");
 	element.appendChild(paragrafo);
