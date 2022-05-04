@@ -28,8 +28,8 @@ xhr.addEventListener("readystatechange", function () {
 		pe = p
 		console.log(this.responseText);
 		const element = document.getElementById("div1");
-		element.innerHTML = xhr.responseText;
-		let teste = element.innerHTML;
+		//element.innerHTML = xhr.responseText;
+		let teste = xhr.responseText;
 		var urlRegex = /(https?:\/\/[^ ]*)/;
 
 		var input = teste;
