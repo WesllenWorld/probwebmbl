@@ -39,7 +39,7 @@ xhr.addEventListener("readystatechange", function () {
 		alert(url);
 
 		let im = document.createElement("img");
-		im.setAttribute(src, url);
+		im.setAttribute("src", url);
 		element.appendChild(im);
 	}
 });
