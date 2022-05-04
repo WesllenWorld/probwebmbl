@@ -34,7 +34,7 @@ xhr.addEventListener("readystatechange", function () {
 
 		var input = teste;
 		var url = input.match(urlRegex)[1];
-		str.replace('"}]','');
+		url.replace('"}]','');
 
 	alert(url);
 	}
